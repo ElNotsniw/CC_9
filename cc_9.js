@@ -56,6 +56,40 @@ class Manager extends Employee {
 // Create a Manager that inherits properties from the Employee class and adding a new property: Team Size, and calculating bonus
 
 const mgr1 = new Manager("John Smith", 201, "IT", 8000, 5);
-console.log(mgr1.getdetails());
+console.log(mgr1.getdetails());                             // Output: Employee Name: John Smith, ID: 201, Department: IT, Salary: 8000, Team Size: 5
 
-console.log(`Bonus: $${mgr1.calculateBonus()}`);
+console.log(`Bonus: $${mgr1.calculateBonus()}`);            // Output: Bonus: $9600
+
+
+
+
+
+// Task 3 - Creating a Company Class
+
+// Create a Company Class to add employees to
+
+class Company {
+    constructor(name) {
+        this.name = name;
+        this.employees = []
+    }
+
+    addEmployee(employee) {
+        this.employees.push(employee);
+    }
+
+    listEmployee() {
+        this.employees.forEach(employee => {
+            console.log(employee.getdetails());
+        });
+    }
+}
+
+
+// Naming the company and then console-logging the employees to associate with the company
+
+const company = new Company ("TechCorp:");
+
+company.addEmployee(emp1);                      // Output: Employee Name: Alice Johnson, ID: 101, Department: Sales, Salary: 5000
+company.addEmployee(mgr1);                      // Output: Employee Name: John Smith, ID: 201, Department: IT, Salary: 8000, Team Size: 5
+company.listEmployee();                         // Shows the two employees above in the console
