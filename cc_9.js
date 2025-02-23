@@ -30,6 +30,8 @@ console.log(`Annual Salary: $${emp1.calculateAnnualSalary()}`);         // Outpu
 
 
 
+// ---------------------------------------------------------------------------------------------------------------------------------
+
 
 
 
@@ -70,6 +72,8 @@ console.log(`Bonus: $${mgr1.calculateBonus()}`);            // Output: Bonus: $9
 
 
 
+// ---------------------------------------------------------------------------------------------------------------------------------
+
 
 
 
@@ -93,6 +97,10 @@ class Company {
         })
     }
 
+
+// ---------------------------------------------------------------------------------------------------------------------------------
+
+
 // Task 4 - Implementing a Payroll System
 
 // Creating a method to calculate the total amount earned by the employees within the Company Class
@@ -100,6 +108,11 @@ class Company {
     calculateTotalPayroll () {
         return this.employees.reduce((total, employee) => total + employee.calculateAnnualSalary(), 0)
         }
+
+
+
+
+// ---------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -120,6 +133,10 @@ class Company {
     
 
 
+// ---------------------------------------------------------------------------------------------------------------------------------
+
+
+
 
 // (Task 3): Naming the company and then console-logging the employees to associate with the company 
 
@@ -130,6 +147,7 @@ company.addEmployee(mgr1);                      // Output: Manager: John Smith, 
 company.listEmployee();                         // Shows the two employees above in the console
 
 
+// ---------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -137,6 +155,9 @@ company.listEmployee();                         // Shows the two employees above
 
 console.log(`Total Payroll: $${company.calculateTotalPayroll()}`)           // Output: Total Payroll: $165600
 
+
+
+// ---------------------------------------------------------------------------------------------------------------------------------
 
 
 
